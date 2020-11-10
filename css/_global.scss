@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background: rgb(255, 255, 255);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+// font
+
+@font-face {
+  font-family: 'Bard';
+  src:url('/fonts/Bard.ttf.woff') format('woff'),
+      url('/fonts/Bard.ttf.svg#Bard') format('svg'),
+      url('/fonts/Bard.ttf.eot'),
+      url('/fonts/Bard.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+$wu-style: 'Bard';
+$main-color: #FFC000;
+
+

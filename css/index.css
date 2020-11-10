@@ -1,0 +1,263 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Bard';
+  src: url("/fonts/Bard.ttf.woff") format("woff"), url("/fonts/Bard.ttf.svg#Bard") format("svg"), url("/fonts/Bard.ttf.eot"), url("/fonts/Bard.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  background: black;
+  height: 4rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .logo {
+  width: 7%;
+  margin: 0 0 0 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 25%;
+  }
+}
+
+header .nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-list .nav-link {
+  text-decoration: none;
+  letter-spacing: .2rem;
+  color: #FFC000;
+  font-family: "Bard";
+  font-size: 1.6rem;
+  padding: 0 .5rem;
+  margin: 0 .5rem;
+}
+
+#title {
+  font-size: 5rem;
+  font-family: "Bard";
+  color: #FFC000;
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 25rem;
+  right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  #title {
+    left: 15rem;
+    top: 1rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #title {
+    display: none;
+  }
+}
+
+#img-div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#img-div #image {
+  width: 100%;
+}
+
+#img-div #img-caption {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tribute-info {
+  margin: 1rem 2rem;
+  padding: 0;
+  background: #e6e6e6;
+  border-radius: 1rem;
+}
+
+#tribute-info .section-title {
+  width: 100%;
+  height: 7rem;
+  margin: 0;
+  border-radius: .3rem;
+  font-size: 2.8rem;
+  color: #FFC000;
+  font-family: "Bard";
+  text-align: center;
+  background-color: black;
+}
+
+#tribute-info .section-cnt {
+  padding: 1rem 2rem .5rem;
+}
+
+#tribute-info .section-cnt h3 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+#tribute-info .section-cnt p {
+  font-size: 1.8rem;
+}
+
+.mem-title {
+  background: black;
+  font-size: 3rem;
+  color: #FFC000;
+  font-family: "Bard";
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.mem-title h2 {
+  margin: 0;
+}
+
+.members-div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (25%)[5];
+      grid-template-rows: repeat(5, 25%);
+  gap: 1rem 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .members-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .members-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.members-div .grid-item {
+  margin: 1rem;
+}
+
+.members-div .card {
+  border: 2px solid rgba(68, 68, 68, 0.774);
+  background: whitesmoke;
+  border-radius: .8rem;
+  -webkit-box-shadow: 0 0.6rem 0.9rem 0.1rem #616161;
+          box-shadow: 0 0.6rem 0.9rem 0.1rem #616161;
+}
+
+.members-div .card img {
+  width: 100%;
+}
+
+.members-div .card h1,
+.members-div .card h2,
+.members-div .card p {
+  margin: 0;
+  text-align: center;
+}
+
+.members-div .card h1 {
+  font-size: 2.4rem;
+  background: black;
+  color: #FFC000;
+  font-family: "Bard";
+}
+
+.members-div .card h2 {
+  margin: 0.5rem auto;
+}
+
+.members-div .card p {
+  font-size: 1.6rem;
+  padding: 0.8rem;
+}
+
+.more-info {
+  text-align: center;
+  background: black;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #FFC000;
+  height: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .more-info {
+    font-size: 1rem;
+    height: 6rem;
+  }
+}
+
+.more-info h3 {
+  margin: 0;
+  padding: 1rem;
+}
+
+.more-info a {
+  color: white;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */
